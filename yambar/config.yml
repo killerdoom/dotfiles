@@ -1,0 +1,62 @@
+bar:
+  height: 25
+  location: top
+  background: 000000ff
+  font: "JetBrainsMono Nerd Font:12:size=12"
+
+  right:
+    - clock:
+        content:
+          - string: {text: " "}
+          - string: {text: "{date} | ", right-margin: 5}
+          - string: {text: " "}
+          - string: {text:  " {time} | "}
+    - battery:
+        name: BAT1
+        poll-interval: 250
+        content:
+          string: {text: "󰁾 {capacity}% | "}
+    - pipewire:
+        anchors:
+          volume: &volume
+           conditions:
+             muted: {string: {text: " {linear_volume}% | "} }
+             ~muted: {string: {text: " {linear_volume}% | "} }
+        content:
+          list:
+            items:
+              - map:
+                  conditions:
+                    type == "sink":
+                      map:
+                        conditions:
+                          icon == "audio-headset-bluetooth":
+                            string: {text: " 🎧 "}
+                        default:
+                           ramp:
+                            tag: linear_volume
+                            items:
+                              - string: {text: "🔈"}
+                              - string: {text: "🔉"}
+                              - string: {text: "🔊"}
+                    type == "source":
+                      - string: {text: "🎙"}
+              - map:
+                    <<: *volume
+  left:
+    - dwl:
+        number-of-tags: 9
+        dwl-info-filename: "~/.cache/dwl-info"
+        name-of-tags: [" I "," II "," III "," IV "," V "," VI "," VII "," VIII "," IX " ]
+        content:
+          list:
+            items:
+                 - map:
+                           conditions:
+                             # default tag
+                             id == 0: {string: {text: "{layout} {title}"}}
+
+                             selected: {string: {text: "-> {name}"}}
+                             ~empty: {string: {text: "{name}"}}
+                             urgent: {string: {text: "=> {name} <="}}
+
