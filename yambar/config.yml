@@ -2,7 +2,7 @@ bar:
   height: 25
   location: top
   background: 000000ff
-  font: "JetBrainsMono Nerd Font:12:size=12"
+  font: "JetBrainsMono Nerd Font:12:size=13"
 
   right:
     - clock:
