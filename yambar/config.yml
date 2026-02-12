@@ -20,8 +20,8 @@ bar:
         anchors:
           volume: &volume
            conditions:
-             muted: {string: {text: " {linear_volume}% | "} }
-             ~muted: {string: {text: " {linear_volume}% | "} }
+             muted: {string: {text: "{linear_volume}% | "} }
+             ~muted: {string: {text: "{linear_volume}% | "} }
         content:
           list:
             items:
@@ -40,7 +40,7 @@ bar:
                               - string: {text: "🔉"}
                               - string: {text: "🔊"}
                     type == "source":
-                      - string: {text: "🎙"}
+                      - string: {text: "🎙 "}
               - map:
                     <<: *volume
   left:
@@ -56,7 +56,7 @@ bar:
                              # default tag
                              id == 0: {string: {text: "{layout} {title}"}}
 
-                             selected: {string: {text: "-> {name}"}}
+                             selected: {string: {text: "<{name}>"}}
                              ~empty: {string: {text: "{name}"}}
                              urgent: {string: {text: "=> {name} <="}}
 
