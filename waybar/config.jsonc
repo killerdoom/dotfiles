@@ -2,7 +2,7 @@
 {
     // "layer": "top", // Waybar at top layer
      "position": "top", // Waybar position (top|bottom|left|right)
-     "height": 30, // Waybar height (to be removed for auto height)
+    "height": 20, // Waybar height (to be removed for auto height)
 //  "width": fghfhkjd, // Waybar width
     "spacing": 2, // Gaps between modules (4px)
     "margin":0,
@@ -126,6 +126,7 @@
    "group/hardware": {
     "orientation": "horizontal",
     "modules": [ 
+      "battery",
       "cpu",
       "memory"
     ],
