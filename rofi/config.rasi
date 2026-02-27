@@ -40,6 +40,7 @@
 configuration {
       terminal: "alacritty";
       font: "JetBrainsMono NerdFont 12";
+      modes: [window,drun,run,ssh,filebrowser];
 }
 
 //@theme "/usr/share/rofi/themes/fullscreen-preview.rasi"
