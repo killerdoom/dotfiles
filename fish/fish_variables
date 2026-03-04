@@ -1,4 +1,5 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:4300
-SETUVAR fish_user_paths:/usr/local/bin\x1e/run/wrappers/bin\x1e/run/current\x2dsystem/sw/bin\x1e/home/znorvik/\x2elocal/bin
+SETUVAR __fish_webconfig_theme_notification:set\x2dtheme\x2dv1\x2d\x231
+SETUVAR fish_user_paths:/home/znorvik/Descargas/zig\x2dx86_64\x2dlinux\x2d0\x2e16\x2e0\x2ddev\x2e2676\x2b4e2cec265/zig\x2dx86_64\x2dlinux\x2d0\x2e16\x2e0\x2ddev\x2e2676\x2b4e2cec265\x1e/usr/local/bin\x1e/run/wrappers/bin\x1e/run/current\x2dsystem/sw/bin\x1e/home/znorvik/\x2elocal/bin

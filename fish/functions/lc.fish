@@ -1,3 +1,3 @@
-function lc --wraps='clear && ls -la' --description 'alias lc=clear && ls -la'
-    clear && ls -la $argv
+function lc --wraps='clear && ls -a' --description 'alias lc=clear && ls -a'
+    clear && ls -a $argv
 end

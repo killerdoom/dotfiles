@@ -2,7 +2,7 @@
 
 # Default colors
 [colors.primary]
-background = '#000000'
+background = '#111111'
 foreground = '#aaaaaa'
 
 # Normal colors
@@ -28,5 +28,5 @@ cyan    = '#55ffff'
 white   = '#ffffff'
 
 [window]
-opacity = 1.00
-blur = true
+opacity = 0.95
+blur = false
