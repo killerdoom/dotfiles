@@ -1,12 +1,13 @@
 #!/bin/sh
 
-pipewire &
-pipewire-pulse &
-wireplumber &
+# polybar y pipewire
+/home/znorvik/.config/bspwm/pipewire-start.sh
+
+# todo lo demas
+
 sxhkd &
-sleep 0.3 &&
-polybar &
-feh --bg-fill ~/dotfiles/wp4523638-zone-wallpapers.jpg &
+nm-applet &
+feh --bg-fill ~/Descargas/wallhaven-pkrqe3.png &
 
 bspc monitor -d I II III IV V VI VII VIII IX
 
