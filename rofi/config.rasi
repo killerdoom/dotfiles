@@ -38,7 +38,7 @@
 //@theme "~/.config/rofi/themes/android_notification.rasi"
 
 configuration {
-      terminal: "alacritty";
+      terminal: "st";
       font: "JetBrainsMono NerdFont 12";
       modes: [window,drun,run,ssh,filebrowser];
 }
