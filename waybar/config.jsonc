@@ -11,16 +11,16 @@
     "reload_style_on_change":true,
     "modules-left": [
         "custom/separator",
-        "sway/workspaces",
+        "dwl/tags",
         "custom/separator"
     ],
     "modules-center": [
-      "sway/window"
+      "dwl/window"
     ],
     "modules-right": [
+	"clock",
+        "custom/separator",  
         "pulseaudio",
-        "custom/separator",
-        "clock",
         "custom/separator",
         "tray",
         "custom/separator",
@@ -28,10 +28,8 @@
         "custom/separator"
     ],
     // Modules configuration
-     "sway/workspaces": {
-         "on-click": "activate",
-         "active-only": false,
-         "all-outputs": true,
+     "dwl/tags": {
+	 "num-tags": 9,
          "format": "{icon}",
          "format-icons": {
           "1": "I",
@@ -52,7 +50,7 @@
 "format":" "
 },
 
-     "sway/window":{
+     "dwl/window":{
       "format": "{title}",
       "max-length": 40,
       "icon": false,
@@ -78,7 +76,8 @@
       "cuarenta": "󰁽",
       "treinta": "󰁼",
       "veinte": "󰁻",
-      "diez": "󰁺"
+      "diez": "󰁺",
+      "charging": "󰂄"
     },
     "states": {
       "cien": 100,
@@ -95,9 +94,10 @@
   },
 
     "clock": {
-        // "timezone": "America/New_York",
+	"format": " {:%H:%M:%S}",
+        "interval": 1,
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": " {:%Y-%m-%d}"
     },
     "tray": {
     "icon-size": 18,
@@ -131,7 +131,7 @@
       "memory"
     ],
     "drawer": {
-    "transition-duration": 0,
+    "transition-duration": 500,
     "children-class": "not-power",
     "transition-left-to-right": false
     }
