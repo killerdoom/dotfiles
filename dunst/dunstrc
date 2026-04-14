@@ -346,7 +346,7 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#000000"
     foreground = "#FFFEF6"
-    frame_color = "#FFFFFF"
+    frame_color = "#323232"
     timeout = 5
     # Icon for notifications with low urgency
     default_icon = dialog-information
@@ -354,7 +354,7 @@
 [urgency_normal]
     background = "#000000"
     foreground = "#FFFEF6"
-    frame_color = "#FFFFFF"
+    frame_color = "#323232"
     timeout = 5
     override_pause_level = 30
     # Icon for notifications with normal urgency
