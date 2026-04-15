@@ -28,5 +28,5 @@ cyan    = '#55ffff'
 white   = '#ffffff'
 
 [window]
-opacity = 1.00
+opacity = 0.97
 blur = false

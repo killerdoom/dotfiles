@@ -3,8 +3,11 @@ import = [
     "~/.config/alacritty/themes/linux.toml"
 ]
 
+[terminal]
+shell = "/bin/bash"
+
 [font]
-size = 10.0
+size = 9.0
 
 [font.normal]
 family = "JetBrainsMono NerdFont"
