@@ -5,7 +5,10 @@ setxkbmap es &
 xset r rate 400 30 &
 
 # Wallpaper
-feh --bg-fill ~/dotfiles/wallhaven-k9m1vq.png &
+feh --bg-fill ~/dotfiles/tyler-lastovich-hM08wZJBlK4-unsplash.jpg &
+
+# Compositor
+xcompmgr &
 
 # SLStatus
 slstatus &
@@ -14,6 +17,8 @@ slstatus &
 nm-applet &
 flameshot &
 dunst &
+
+# Pipewire
 
 sleep 0.5 && pipewire &
 sleep 0.5 && pipewire-pulse &
