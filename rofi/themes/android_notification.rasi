@@ -5,24 +5,24 @@
  *******************************************************************************/
 
 * {
-    border-radius:               0px;
+    border-radius:               10px;
     selected-normal-foreground:  rgba ( 255, 255, 255, 100 % ); // NO TOCAR
     foreground:                  rgba ( 193, 193, 193, 100 % ); // NO TOCAR
     normal-foreground:           @foreground;
-    alternate-normal-background: #000000;
-    red:                         rgba ( 000, 00, 00, 100 % );
-    selected-urgent-foreground:  rgba ( 00, 00, 00, 100 % );
+    alternate-normal-background: #0d0d0d;
+    red:                         @foreground;
+    selected-urgent-foreground:  @foreground;
     blue:                        rgba ( 00, 00, 00, 100 % );
     urgent-foreground:           rgba ( 00, 00, 00, 100 % );
-    alternate-urgent-background: rgba ( 00, 00, 00, 100 % );
-    active-foreground:           rgba ( 0, 0, 0, 100 % );
-    lightbg:                     rgba ( 000, 000, 000, 100 % );
-    selected-active-foreground:  rgba ( 00, 00, 00, 100 % );
-    alternate-active-background: #000000;
-    background:                  #000000;
-    bordercolor:                 #FFFFFF;
+    alternate-urgent-background: @foreground;
+    active-foreground:           #666666;
+    lightbg:                     #ffffff;
+    selected-active-foreground:  #666666;
+    alternate-active-background: @background;
+    background:                  #0d0d0d;
+    bordercolor:                 #0d0d0d;
     alternate-normal-foreground: @foreground;
-    normal-background:           #000000;
+    normal-background:           #0d0d0d;
     lightfg:                     rgba ( 00, 000, 000, 100 % );
     selected-normal-background:  rgba ( 51, 51, 51, 100 % );
     border-color:                #111111;
@@ -31,19 +31,19 @@
     urgent-background:           rgba ( 00, 00, 00, 100 % );
     selected-urgent-background:  rgba ( 00, 00, 00, 100 % );
     alternate-urgent-foreground: @urgent-foreground;
-    background-color:            #000000;
+    background-color:            #0d0d0d;
     alternate-active-foreground: @active-foreground;
-    active-background:           #000000;
-    selected-active-background:  rgba ( 00, 00, 00, 100 % );
+    active-background:           #0d0d0d;
+    selected-active-background:  @selected-normal-background;
 }
 window {
-    background-color: #323232;
+    background-color: #333333;
     border:           1;
     padding:          2;
-    border-radius:    0px;
+    border-radius:    10px;
 }
 mainbox {
-    border-radius: 0px;
+    border-radius: 10px;
     border:  1;
     padding: 10;
 }
