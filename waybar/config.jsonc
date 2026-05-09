@@ -1,0 +1,103 @@
+// -*- mode: jsonc -*-
+{
+	 "mode": "dock",
+     "layer": "bottom", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 28, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 0, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "reload_style_on_change": true,
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+		"hyprland/window"
+    ],
+    "modules-right": [
+        "wireplumber",
+        "clock",
+        "tray",
+        "group/hardware"
+    ],
+    // Modules configuration
+     "hyprland/workspaces": {
+         "disable-scroll": false,
+         "all-outputs": true,
+         "warp-on-scroll": true,
+         "format": "{icon}",
+         "format-icons": {
+             "1": "I",
+             "2": "II",
+             "3": "III",
+             "4": "IV",
+             "5": "V",
+             "6": "VI",
+             "7": "VII",
+             "8": "VIII",
+             "9": "IX",
+			 "10": "X"
+         }
+     },
+
+	 "custom/separador": {
+	 	"format": "|"
+	 },
+	
+     "hyprland/window": {
+     	"format": "{title}",
+     	"max-length": 45,
+     	"tooltip": true
+     },
+
+     "tray": {
+     	"spacing": 2,
+     	"icon-size": 20	
+     },
+
+     "clock": {
+     	"interval": 60,
+     	"format": "{:%H:%M}",
+     	"alt-format": "{%A, %B %d, %Y}"
+     },
+	"memory": {
+		"interval": 10,
+		"format": " {used} GB/{total} GB"
+	},
+	"cpu": {
+		"interval": 10,
+		"format": " {usage}%"
+	},
+     
+	"battery": {
+    	"bat": "BAT1",
+    	"interval": 60,
+    	"states": {
+        	"warning": 30,
+        	"critical": 15
+    	},
+    	"format": "{capacity}% {icon}",
+    	"format-icons": ["󰂎", "󱊢", "󱊣" ],
+    	"max-length": 25
+   },
+   "wireplumber": {
+   		"format": "{volume}% {icon}",
+   		"format-icons": {
+   			"default": [" "],
+   			},
+   		"format-muted": "",
+   },
+
+   "group/hardware": {
+   		"orientation": "horizontal",
+		"drawer": {
+   			"transition-duration": 470,
+   			"transition-left-to-right": false
+   		},
+   	"modules": [
+   		"battery",
+   		"memory",
+   		"cpu"
+   	]
+   }
+}

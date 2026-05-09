@@ -15,7 +15,7 @@ alias xi='sudo xbps-install'
 alias xr='sudo xbps-remove'
 alias c='clear'
 alias liberar='sync && echo 3 | sudo tee /proc/sys/vm/drop_caches'
-alias xmonadrebuild='xmonad --recompile && xmonad --restart'
+alias actualizar='sudo xbps-install -Su && sudo pacman -Syu -dd --overwrite '/*' '
 alias fetch='fastfetch --logo void2_small --config /home/znorvik/.config/fastfetch/screenfetch.jsonc'
 PS1='[\h \W]
 > '
